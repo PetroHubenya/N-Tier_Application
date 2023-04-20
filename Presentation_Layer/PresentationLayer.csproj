@@ -6,4 +6,13 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Reference Include="BLL">
+      <HintPath>..\DLL\BLL.dll</HintPath>
+    </Reference>
+    <Reference Include="Common">
+      <HintPath>..\DLL\Common.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>
