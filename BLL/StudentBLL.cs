@@ -16,7 +16,7 @@ namespace BLL
             StudentDAL studentDAL = new StudentDAL();
             if (ValidateID(student.StudentID))
             {
-                return studentDAL.FetchSelectedStudents().Tables[0];
+                return studentDAL.FetchSelectedStudents()/*.Tables[0]*/;
             }
             return null;
         }

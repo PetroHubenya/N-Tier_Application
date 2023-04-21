@@ -1,5 +1,8 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using BLL;
+using Common;
+using Microsoft.AspNetCore.Mvc;
 using Presentation_Layer.Models;
+using System.Data;
 using System.Diagnostics;
 
 namespace Presentation_Layer.Controllers
@@ -15,6 +18,16 @@ namespace Presentation_Layer.Controllers
 
         public IActionResult Index()
         {
+            StudentBLL studentBLL = new StudentBLL();
+            StudentEntity student = new StudentEntity();
+
+            // The application wouldn't build if I try to set StudentId.
+
+            // student.StudentID = 6;
+
+            DataTable dataTable = new DataTable();
+
+            // DataTable studentDataTable = StudentBLL.GetStudentBelow5(student);
             
 
             return View();
